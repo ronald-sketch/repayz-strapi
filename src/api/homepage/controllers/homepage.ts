@@ -3,8 +3,7 @@ import type { Core } from '@strapi/strapi';
 const homepage = ({ strapi }: { strapi: Core.Strapi }) => ({
   async find(ctx) {
     const entity = await strapi.db.query('api::homepage.homepage').findOne();
-    const sanitizedEntity = await this.sanitizeOutput(entity, ctx);
-    return { data: sanitizedEntity };
+    return { data: entity };
   },
 
   async update(ctx) {
@@ -16,8 +15,7 @@ const homepage = ({ strapi }: { strapi: Core.Strapi }) => ({
       data,
     });
 
-    const sanitizedEntity = await this.sanitizeOutput(entity, ctx);
-    return { data: sanitizedEntity };
+    return { data: entity };
   },
 });
 
