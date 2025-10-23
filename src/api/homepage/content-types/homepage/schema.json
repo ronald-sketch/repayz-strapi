@@ -1,0 +1,69 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string",
+      "required": true,
+      "default": "Recycle, Get Paid, Zero Waste"
+    },
+    "heroSubtitle": {
+      "type": "text",
+      "required": true,
+      "default": "Breng je lege flessen en blikjes naar onze automaat en verdien geld voor het milieu"
+    },
+    "heroDescription": {
+      "type": "richtext",
+      "required": false
+    },
+    "machineStatus": {
+      "type": "string",
+      "enum": ["operational", "maintenance"],
+      "default": "operational"
+    },
+    "machineStatusMessage": {
+      "type": "string",
+      "default": "Operationeel"
+    },
+    "bottlesCount": {
+      "type": "integer",
+      "default": 0
+    },
+    "cansCount": {
+      "type": "integer",
+      "default": 0
+    },
+    "openingHours": {
+      "type": "string",
+      "default": "10:00 - 21:00"
+    },
+    "locationTeaser": {
+      "type": "string",
+      "default": "Binnenkort in Oisterwijk"
+    },
+    "whatsappNumber": {
+      "type": "string",
+      "default": "0000000000"
+    },
+    "welfareMission": {
+      "type": "richtext",
+      "required": false
+    },
+    "paymentDescription": {
+      "type": "richtext",
+      "required": false
+    }
+  }
+}
+

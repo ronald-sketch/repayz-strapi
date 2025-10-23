@@ -1,0 +1,74 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "singularName": "setting",
+    "pluralName": "settings",
+    "displayName": "Settings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "default": "REPAYZ"
+    },
+    "siteDescription": {
+      "type": "string",
+      "default": "Recycle, Get Paid, Zero Waste"
+    },
+    "whatsappNumber": {
+      "type": "string",
+      "required": true,
+      "default": "0000000000"
+    },
+    "openingHoursStart": {
+      "type": "string",
+      "default": "10:00"
+    },
+    "openingHoursEnd": {
+      "type": "string",
+      "default": "21:00"
+    },
+    "locationCity": {
+      "type": "string",
+      "default": "Oisterwijk"
+    },
+    "locationCountry": {
+      "type": "string",
+      "default": "Netherlands"
+    },
+    "welfarePartner1": {
+      "type": "string",
+      "default": "Maria Kapel"
+    },
+    "welfarePartner2": {
+      "type": "string",
+      "default": "Stichting Sociaal Huis Oisterwijk"
+    },
+    "welfareDescription": {
+      "type": "richtext"
+    },
+    "paymentMethod1": {
+      "type": "string",
+      "default": "Tikkie App"
+    },
+    "paymentMethod2": {
+      "type": "string",
+      "default": "Donation"
+    },
+    "bottleValue": {
+      "type": "decimal",
+      "default": 0.10
+    },
+    "canValue": {
+      "type": "decimal",
+      "default": 0.05
+    }
+  }
+}
+
